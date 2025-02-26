@@ -9,13 +9,14 @@ html {
 }
 
 .page {
-  inline-size: 1200px;
-  block-size: 100%;
+  display: flex;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  inline-size: 1200px;
+  block-size: 100%;
 }
 
 h1,
@@ -48,4 +49,159 @@ ol {
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #D9D9D9;
+}
+
+/* .visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+} */
+
+.content {
+  display: grid;
+  grid-template-columns: 711px 399px;
+  grid-template-areas: 'result details';
+  gap: 30px;
+  align-self: center;
+  margin: 0 30px;
+  inline-size: 1140px;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  grid-area: result;
+  gap: 16px;
+  align-self: flex-end;
+}
+
+.result__video-container {
+  width: 711px;
+  height: 386px;
+}
+
+.result__video {
+  object-fit: cover;
+  object-position: center;
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  gap: 40px;
+}
+
+.search-form__fieldset {
+
+}
+
+.search-form__fieldset-title {
+
+}
+
+.search-form__label {
+
+}
+
+.search-form__label-text {
+
+}
+
+.search-form__textfield {
+
+}
+
+.search-form__checkbox-list {
+  
+}
+
+.search-form__checkbox {
+
+}
+
+.search-form__pseudo-checkbox {
+
+}
+
+.button {
+
+}
+
+.search-form__submit-button {
+
+}
+
+.content__details {
+  display: flex;
+  flex-direction: column;
+  grid-area: details;
+  gap: 26px;
+  block-size: 534px;
+}
+
+.title {
+
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.content__list-container {
+  overflow-y: scroll;
+  block-size: 298px;
+}
+
+.content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.cards-list-item-template {
+  
+}
+
+.content__list-item {
+
+}
+
+.content__card-link {
+
+}
+
+.content__video-card {
+
+}
+
+.content__video-card-description-container {
+
+}
+
+.content__video-card-title {
+
+}
+
+.content__video-card-description {
+
+}
+
+.content__video-card-thumbnail {
+
+}
+
+.more-button-template {
+
+}
+
+.more-button {
+
 }
