@@ -10,6 +10,7 @@ html {
 
 .page {
   display: flex;
+  align-items: center;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -65,8 +66,8 @@ ol {
   display: grid;
   grid-template-columns: 711px 399px;
   grid-template-areas: 'result details';
+  align-items: end;
   gap: 30px;
-  align-self: center;
   margin: 0 30px;
   inline-size: 1140px;
 }
@@ -76,12 +77,12 @@ ol {
   flex-direction: column;
   grid-area: result;
   gap: 16px;
-  align-self: flex-end;
 }
 
 .result__video-container {
-  width: 711px;
-  height: 386px;
+  position: relative;
+  inline-size: 711px;
+  block-size: 386px;
 }
 
 .result__video {
@@ -144,10 +145,15 @@ ol {
   flex-direction: column;
   grid-area: details;
   gap: 26px;
-  block-size: 534px;
 }
 
 .title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 70.5px;
+  letter-spacing: 0;
+  text-transform: uppercase;
 
 }
 
@@ -166,10 +172,6 @@ ol {
   gap: 30px;
 }
 
-.cards-list-item-template {
-  
-}
-
 .content__list-item {
 
 }
@@ -179,11 +181,13 @@ ol {
 }
 
 .content__video-card {
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .content__video-card-description-container {
-
+  flex-grow: 1;
 }
 
 .content__video-card-title {
@@ -195,7 +199,10 @@ ol {
 }
 
 .content__video-card-thumbnail {
-
+  object-fit: cover;
+  object-position: center;
+  inline-size: 194px;
+  block-size: 103px;
 }
 
 .more-button-template {
