@@ -76,7 +76,7 @@ ol {
   display: flex;
   flex-direction: column;
   grid-area: result;
-  gap: 16px;
+  gap: 20px;
 }
 
 .result__video-container {
@@ -98,10 +98,14 @@ ol {
   justify-content: space-between;
   align-items: start;
   gap: 40px;
+
 }
 
 .search-form__fieldset {
-
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: none;
 }
 
 .search-form__fieldset-title {
@@ -110,23 +114,61 @@ ol {
   font-size: 18px;
   line-height: 21.6px;
   letter-spacing: 0;
-
+  text-align: start;
 }
 
-.search-form__label {
-
+.search-form__fieldset-text {
+  font-family: 'Fira Sans Condensed';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.6px;
+  letter-spacing: 0;
 }
 
-.search-form__label-text {
+input[type='checkbox']:checked + .search-form__pseudo-checkbox {
+  box-shadow: inset 0 0 0 2px #1B1919;
+  background-color: #fff;
+}
 
+.search-form__label .search-form__pseudo-checkbox {
+  display: inline-block;
+  border: 1px solid #fff;
+  vertical-align: middle;
+  background-color: transparent;
+  cursor: pointer;
+  inline-size: 19px;
+  block-size: 19px;
+}
+
+.search-form__label:hover .search-form__label-text {
+  text-decoration: underline solid 1px #fff;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+.search-form__label:has(:not(:active):focus-visible) {
+  outline: 1px solid #fff;
+  outline-offset: 2px;
 }
 
 .search-form__textfield {
-
+  width: 225px;
+  height: 27px;
+  border: none;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  color: #fff;
+  font-family: inherit;
+  font-size: inherit;
+  background-color: transparent;
+  appearance: none;
 }
 
 .search-form__checkbox-list {
-  
+  display: flex;
+  gap: 15px;
 }
 
 .search-form__checkbox {
@@ -147,13 +189,14 @@ ol {
   letter-spacing: 0;
   text-align: center;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .search-form__submit-button {
   align-self: flex-end;
+  text-align: center;
   inline-size: 194px;
   block-size: 34px;
-  text-align: center;
 }
 
 .content__details {
@@ -175,6 +218,10 @@ ol {
 
 .content__accent {
   color: #545050;
+}
+
+.content__card-link_current {
+  background-color: #545050;
 }
 
 .content__list-container {
@@ -244,4 +291,18 @@ ol {
 .more-button {
   inline-size: 99%;
   block-size: 34px;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+.button:hover {
+  text-decoration: underline 1px solid #fff;
+  text-underline-offset: 2px;
+}
+
+.button:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 2px;
 }
