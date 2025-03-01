@@ -13,7 +13,7 @@ html {
   align-items: center;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
   inline-size: 1200px;
@@ -123,6 +123,7 @@ ol {
 
 .search-form__label {
   display: flex;
+  align-items: center;
   gap: 5px;
   width: fit-content;
   cursor: pointer;
@@ -152,8 +153,8 @@ ol {
 }
 
 .search-form__textfield {
-  width: 225px;
-  height: 27px;
+  min-width: 225px;
+  min-height: 27px;
   border: none;
   border-top: 1px solid #fff;
   border-right: 1px solid transparent;
@@ -161,7 +162,7 @@ ol {
   border-left: 1px solid transparent;
   outline: none;
   color: #fff;
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21.6px;
@@ -197,7 +198,7 @@ ol {
 .button {
   border: 1px solid #fff;
   color: #fff;
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 21.6px;
@@ -205,13 +206,13 @@ ol {
   text-align: center;
   background-color: transparent;
   cursor: pointer;
+  block-size: 34px;
 }
 
 .search-form__submit-button {
   align-self: flex-end;
   text-align: center;
   inline-size: 194px;
-  block-size: 34px;
 }
 
 .content__details {
@@ -222,7 +223,7 @@ ol {
 }
 
 .title {
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 70.5px;
@@ -237,7 +238,7 @@ ol {
 
 .content__list-container {
   position: relative;
-  overflow-y: scroll;
+  overflow-y: auto;
   block-size: 298px;
 }
 
@@ -293,12 +294,12 @@ ol {
   flex-direction: column;
   flex-grow: 1;
   gap: 6px;
-  overflow: hidden;
 }
 
 .content__video-card-title {
+  max-width: 195px;
   overflow: hidden;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 30px;
@@ -308,8 +309,9 @@ ol {
 }
 
 .content__video-card-description {
+  max-width: 195px;
   overflow: hidden;
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 16.2px;
@@ -326,7 +328,6 @@ ol {
 
 .more-button {
   width: 99%;
-  height: 34px;
 }
 
 .button:active {
